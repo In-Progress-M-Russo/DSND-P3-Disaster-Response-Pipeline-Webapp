@@ -1,0 +1,10 @@
+# Don't track content of these folders
+lessons
+models_temp
+.ipynb_checkpoints
+__pycache__
+
+# Don't track files with this extension
+*.pkl
+*.pickle
+*.pkz
