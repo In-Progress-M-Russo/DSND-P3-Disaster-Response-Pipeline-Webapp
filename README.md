@@ -29,7 +29,7 @@ dsnd-proj3        /usr/local/anaconda3/envs/dsnd-proj3
 the full list of requirements that get loaded is also visible in [`requirements.txt`](./requirements.txt), that will be used by Heroku.
 
 ## Instructions
-Before running th code you will need to download the model file availble here, and move it to the [`data`](./data) folder. Please note that:
+Before running th code you will need to download the model file availble [here](https://drive.google.com/file/d/13A-E9P84fXXDcGOghdw1zF3jxirvAuak/view?usp=sharing), and move it to the [`data`](./data) folder. Please note that:
 
 * In order to allow the upload to Heroku, the original pickle file had to be compressed using the instructions found [here](https://betterprogramming.pub/load-fast-load-big-with-compressed-pickles-5f311584507e). This led to some modifications in the code and a bit more time to load the app.
 * The file is nonetheless too big to be uplaoded to git directly, so I put it in my google drive.
