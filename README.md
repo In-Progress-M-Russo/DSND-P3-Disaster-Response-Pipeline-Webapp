@@ -1,18 +1,15 @@
-# Disaster Response Pipeline Project
+# Disaster Response Pipeline Webapp
 
 ## Overview
 
-This Project is submitted as part of the Udacity Data Science Nanodegree.
+This repo is an extension of [this one](https://github.com/russom/DSND-P3-Disaster-Response-Pipeline), containin code for the creation of a Disaster Response webapp capable of classifying messages from user based on a ML model trained for that purpose.
 
-For it the goal is to analyze disaster data provided by a company called Figure Eight (now part of [Appen](https://appen.com/)) that is partner in the Nanodegree, and to build a model for an API that classifies disaster messages.
-
-In the [`data_files`](./data/data_files) folder, you'll find 2 csv files containing real messages that were sent during disaster events. The project includes a machine learning pipeline to categorize these events so that the messages could be sent to an appropriate disaster relief agency.
-
-The project also includes a web app where an emergency worker can input a new message and get classification results in several categories. The web app will also display visualizations of the data. 
+The code in the original repo contains all the scripts needed to handle the data and train the classifier: it also includes the cose for a webapp capable of running locally on your machine.
+The code in this repo focuses only on the webapp part, with the scope of packaging it for a cloaud deployment. The target platform chosen is [Heroku](https://www.heroku.com/).
 
 
 ## Requirements
-In order to facilitate the execution of the Notebooks and of the scripts I have prepared an [`environment.yml`](./environment.yml) file to be used to install an environment with [Anaconda](https://www.continuum.io/downloads):
+In order to run the app locally I have prepared an [`environment.yml`](./environment.yml) file to be used to install an environment with [Anaconda](https://www.continuum.io/downloads):
 
 ```sh
 conda env create -f environment.yml
@@ -28,7 +25,7 @@ dsnd-proj3        /usr/local/anaconda3/envs/dsnd-proj3
 
 ```
 
-Further documentation on working with Anaconda environments can be found [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). 
+the full list of requirements that get loaded is also visible in [`requirements.txt`](./requirements.txt), that will be used by Heroku.
 
 ## Instructions
 The code in this repo includes 2 jupyter notebooks (in the [`notebooks`](./notebooks) folder) and a three scripts. 
