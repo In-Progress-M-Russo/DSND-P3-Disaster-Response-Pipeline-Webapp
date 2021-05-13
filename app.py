@@ -30,5 +30,7 @@ def tokenize(text):
 
     return tokens
 
+from disresapp import app
+
 # uncomment to run locally
 # app.run(host='0.0.0.0', port=3001, debug=False)
